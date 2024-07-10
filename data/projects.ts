@@ -1,0 +1,97 @@
+// an object to define a project for the work page
+
+export type Project = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+};
+
+// work projects
+export const workProjects: Project[] = [
+  {
+    id: 1,
+    title: 'Earthquake Tracker',
+    description:
+      'View earthquake events around the globe. This project utilizes Next, Tailwind, Mapbox and  data from the USGS.',
+    image: '/images/earthquake-tracker-screenshot.png',
+    url: 'https://github.com/ash-bergs/earthquake-tracker',
+  },
+  {
+    id: 2,
+    title: 'Portfolio',
+    description:
+      'This is my art portfolio site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
+    image: '/images/portfolio-screenshot.png',
+    url: 'example.com',
+  },
+  // {
+  //   id: 3,
+  //   title: 'Ash Bergsma Blog',
+  //   description:
+  //     'This is my blog site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
+  //   image: '/images/dummy-img.svg',
+  //   url: 'example.com',
+  // },
+  // {
+  //   id: 4,
+  //   title: 'Ash Bergsma Shop',
+  //   description:
+  //     'This is my shop site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
+  //   image: '/images/dummy-img.svg',
+  //   url: 'example.com',
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Ash Bergsma Contact',
+  //   description:
+  //     'This is my contact site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
+  //   image: '/images/dummy-img.svg',
+  //   url: 'example.com',
+  // },
+];
+
+// art projects
+//TODO: think about how to approach the art projects page
+// but for now this works
+export const artProjects: Project[] = [
+  {
+    id: 1,
+    title: 'Bird in a Jar',
+    description: 'Gouache on cold-press cotton',
+    image: '/images/bird-in-a-jar.png',
+    url: 'https://www.playbook.com/ash-bergs/vBVGWftYcUsaE2PVq42vq5Yh?assetToken=Y7HGvNHWsFPBAChYST18YdnD',
+  },
+  {
+    id: 2,
+    title: 'Rise',
+    description: 'Watercolor on cold-press cotton',
+    image: '/images/octopus.png',
+    url: 'https://www.playbook.com/ash-bergs/vBVGWftYcUsaE2PVq42vq5Yh?assetToken=JudsZiCBay7MhrWgNgLaXbBo',
+  },
+  // {
+  //   id: 3,
+  //   title: 'Ash Bergsma Blog',
+  //   description:
+  //     'This is my blog site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
+  //   image: '/images/dummy-img.svg',
+  //   url: 'example.com',
+  // },
+  // {
+  //   id: 4,
+  //   title: 'Ash Bergsma Shop',
+  //   description:
+  //     'This is my shop site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
+  //   image: '/images/dummy-img.svg',
+  //   url: 'example.com',
+  // },
+  // {
+  //   id: 5,
+  //   title: 'Ash Bergsma Contact',
+  //   description:
+  //     'This is my contact site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
+  //   image: '/images/dummy-img.svg',
+  //   url: 'example.com',
+  // },
+];
