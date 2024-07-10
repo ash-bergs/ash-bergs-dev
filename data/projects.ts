@@ -61,14 +61,14 @@ export const artProjects: Project[] = [
     title: 'Bird in a Jar',
     description: 'Gouache on cold-press cotton',
     image: '/images/bird-in-a-jar.png',
-    url: 'https://www.playbook.com/ash-bergs/vBVGWftYcUsaE2PVq42vq5Yh?assetToken=Y7HGvNHWsFPBAChYST18YdnD',
+    url: 'https://www.playbook.com/s/ash-bergs/dervn1CaZLvVVzpLoqWRoWJS',
   },
   {
     id: 2,
     title: 'Rise',
     description: 'Watercolor on cold-press cotton',
     image: '/images/octopus.png',
-    url: 'https://www.playbook.com/ash-bergs/vBVGWftYcUsaE2PVq42vq5Yh?assetToken=JudsZiCBay7MhrWgNgLaXbBo',
+    url: 'https://www.playbook.com/s/ash-bergs/dervn1CaZLvVVzpLoqWRoWJS',
   },
   // {
   //   id: 3,
