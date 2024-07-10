@@ -18,7 +18,7 @@ export default function PageHeader({ copy, image }: PageHeaderProps) {
       gap="6" //half the amount of y padding - should the standard be increments of 6?
     >
       <Text textAlign="center">{copy}</Text>
-      <Image width={{ base: '150px', md: '200px' }} src={image} />
+      <Image width={{ base: '150px', md: '200px' }} src={image} alt="" />
       {/* <Image
         width={{ base: '250px', md: '500px' }}
         src="/images/portfolio-hero-sketch.png"

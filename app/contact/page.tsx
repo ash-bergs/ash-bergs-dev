@@ -23,11 +23,11 @@ export default function Contact() {
         {/**TODO: make this into a component that takes data like a cms*/}
         <Box px={{ base: 16, md: 48 }} py="12">
           <VStack spacing="6">
-            <Heading fontSize="6xl">Let's get in touch!</Heading>
+            <Heading fontSize="6xl">Let{`\u0027`}s get in touch!</Heading>
             <Text>
-              Whether you're looking to collaborate, contact me for hire, or
-              want to inquire about a piece of art - you can get ahold of me in
-              a number of ways
+              Whether you{`\u0027`}re looking to collaborate, contact me for
+              hire, or want to inquire about a piece of art - you can get ahold
+              of me in a number of ways
             </Text>
           </VStack>
         </Box>
