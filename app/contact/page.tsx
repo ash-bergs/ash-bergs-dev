@@ -2,7 +2,6 @@
 import {
   Box,
   Flex,
-  HStack,
   Heading,
   Link,
   Icon,
@@ -15,7 +14,6 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 
-//TODO: get all the stack logos and add them to public folder
 export default function Contact() {
   return (
     <main>
@@ -31,9 +29,8 @@ export default function Contact() {
             </Text>
           </VStack>
         </Box>
-        <HStack px="16" py="6" gap="4">
+        <Flex direction={{ base: 'column', md: 'row' }} px="16" py="6" gap="4">
           <VStack
-            //align="left"
             w="full"
             gap="8"
             border="1px solid"
@@ -50,7 +47,6 @@ export default function Contact() {
                 alignItems="center"
                 gap="2"
                 _hover={{
-                  // enlarge
                   transform: 'scale(1.04)',
                 }}
                 transition="all 0.2s ease-in-out"
@@ -71,7 +67,6 @@ export default function Contact() {
                 alignItems="center"
                 gap="2"
                 _hover={{
-                  // enlarge
                   transform: 'scale(1.04)',
                 }}
                 transition="all 0.2s ease-in-out"
@@ -148,7 +143,7 @@ export default function Contact() {
               </Flex>
             </VStack>
           </VStack>
-        </HStack>
+        </Flex>
       </section>
     </main>
   );

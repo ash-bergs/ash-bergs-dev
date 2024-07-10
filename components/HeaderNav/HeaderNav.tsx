@@ -1,9 +1,23 @@
 'use client';
-import React from 'react';
-import { Box, Flex, Text } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import {
+  Box,
+  Flex,
+  Text,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
+} from '@chakra-ui/react';
 import { Link } from '@chakra-ui/next-js';
+import { IoClose } from 'react-icons/io5';
+import { IoMenu } from 'react-icons/io5';
 
 export default function HeaderNav() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggleMenu = () => setIsOpen(!isOpen);
   return (
     <Flex
       as="nav"
@@ -23,22 +37,34 @@ export default function HeaderNav() {
           </Text>
         </Link>
       </Flex>
-      <Box
-        display={{ base: 'block', md: 'none' }}
-        onClick={() => console.log('clicked')}
-      >
-        <svg
-          fill="black"
-          width="12px"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>Menu</title>
-          <path
-            fill="black"
-            d="M3 3h14a1 1 0 010 2H3a1 1 0 010-2zm0 5h14a1 1 0 010 2H3a1 1 0 010-2zm0 5h14a1 1 0 010 2H3a1 1 0 010-2z"
-          />
-        </svg>
+      <Box display={{ base: 'block', md: 'none' }}>
+        <Menu isOpen={isOpen}>
+          <MenuButton
+            as="div"
+            display={{ base: 'block', md: 'none' }}
+            onClick={handleToggleMenu}
+          >
+            <IconButton
+              icon={isOpen ? <IoClose /> : <IoMenu />}
+              variant="outline"
+              aria-label={`Toggle Menu ${isOpen ? 'close' : 'open'}`}
+            />
+          </MenuButton>
+          <MenuList>
+            <MenuItem as={Link} href="/work">
+              Work
+            </MenuItem>
+            <MenuItem as={Link} href="/art">
+              Art
+            </MenuItem>
+            <MenuItem as={Link} href="/about">
+              About
+            </MenuItem>
+            <MenuItem as={Link} href="/contact">
+              Contact
+            </MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
       <Flex
         display={{ base: 'none', md: 'flex' }}
