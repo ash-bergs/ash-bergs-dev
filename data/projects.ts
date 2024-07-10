@@ -24,7 +24,7 @@ export const workProjects: Project[] = [
     description:
       'This is my art portfolio site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
     image: '/images/portfolio-screenshot.png',
-    url: 'example.com',
+    url: 'https://github.com/ash-bergs/ash-bergs-dev',
   },
   // {
   //   id: 3,
