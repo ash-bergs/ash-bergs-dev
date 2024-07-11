@@ -12,7 +12,32 @@ import {
 import { FaGithub } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import { FaPaperclip } from 'react-icons/fa';
+import { FaSteam } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
+
+// there's no need to engineer a whole reusable section here right now
+// but I'll define all the styles separately
+const ContactCardWrapper = {
+  w: 'full',
+  gap: '6',
+  border: '1px solid',
+  borderColor: 'gray.200',
+  borderRadius: 'md',
+  boxShadow: 'sm',
+  px: '6',
+  py: '6',
+};
+
+const ContactItemWrapper = {
+  alignItems: 'center',
+  cursor: 'pointer',
+  gap: '2',
+  _hover: {
+    transform: 'scale(1.04)',
+  },
+  transition: 'all 0.2s ease-in-out',
+};
 
 export default function Contact() {
   return (
@@ -29,28 +54,27 @@ export default function Contact() {
             </Text>
           </VStack>
         </Box>
-        <Flex direction={{ base: 'column', md: 'row' }} px="16" py="6" gap="4">
-          <VStack
-            w="full"
-            gap="8"
-            border="1px solid"
-            borderColor="gray.200"
-            px="6"
-            py="6"
-          >
+        <Flex direction={{ base: 'column', md: 'row' }} px="40" gap="6">
+          <VStack {...ContactCardWrapper}>
             <Heading alignSelf="center" fontSize="2xl">
               Professional
             </Heading>
             <Divider />
             <VStack align="left" gap="4">
-              <Flex
-                alignItems="center"
-                gap="2"
-                _hover={{
-                  transform: 'scale(1.04)',
-                }}
-                transition="all 0.2s ease-in-out"
-              >
+              <Flex {...ContactItemWrapper}>
+                <Icon as={FaGithub} boxSize="36px" />
+
+                <Link
+                  href="https://github.com/ash-bergs"
+                  target="_blank"
+                  fontFamily="heading"
+                  fontWeight="600"
+                  fontSize="lg"
+                >
+                  Github
+                </Link>
+              </Flex>
+              <Flex {...ContactItemWrapper}>
                 <Icon as={FaLinkedin} boxSize="36px" />
 
                 <Link
@@ -63,14 +87,7 @@ export default function Contact() {
                   LinkedIn
                 </Link>
               </Flex>
-              <Flex
-                alignItems="center"
-                gap="2"
-                _hover={{
-                  transform: 'scale(1.04)',
-                }}
-                transition="all 0.2s ease-in-out"
-              >
+              <Flex {...ContactItemWrapper}>
                 <Icon as={SiGmail} boxSize="36px" />
 
                 <Link
@@ -85,30 +102,14 @@ export default function Contact() {
               </Flex>
             </VStack>
           </VStack>
-          <VStack
-            //align="left"
-            w="full"
-            gap="8"
-            border="1px solid"
-            borderColor="gray.200"
-            px="6"
-            py="6"
-          >
+          <VStack {...ContactCardWrapper}>
             <Heading alignSelf="center" fontSize="2xl">
               Socials & Gaming
             </Heading>
             <Divider />
             <VStack align="left" gap="4">
-              <Flex
-                alignItems="center"
-                gap="2"
-                _hover={{
-                  // enlarge
-                  transform: 'scale(1.04)',
-                }}
-                transition="all 0.2s ease-in-out"
-              >
-                <Icon as={FaGithub} boxSize="36px" />
+              <Flex {...ContactItemWrapper}>
+                <Icon as={FaSteam} boxSize="36px" />
 
                 <Link
                   href="https://github.com/ash-bergs"
@@ -117,18 +118,10 @@ export default function Contact() {
                   fontWeight="600"
                   fontSize="lg"
                 >
-                  Github
+                  Steam
                 </Link>
               </Flex>
-              <Flex
-                alignItems="center"
-                gap="2"
-                _hover={{
-                  // enlarge
-                  transform: 'scale(1.04)',
-                }}
-                transition="all 0.2s ease-in-out"
-              >
+              <Flex {...ContactItemWrapper}>
                 <Icon as={FaInstagram} boxSize="36px" />
 
                 <Link
@@ -139,6 +132,19 @@ export default function Contact() {
                   fontSize="lg"
                 >
                   RamenMermaid
+                </Link>
+              </Flex>
+              <Flex {...ContactItemWrapper}>
+                <Icon as={FaPaperclip} boxSize="36px" />
+
+                <Link
+                  href="https://dev.to/ash_bergs"
+                  target="_blank"
+                  fontFamily="heading"
+                  fontWeight="600"
+                  fontSize="lg"
+                >
+                  Blog
                 </Link>
               </Flex>
             </VStack>
