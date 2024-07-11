@@ -30,6 +30,7 @@ const ContactCardWrapper = {
 };
 
 const ContactItemWrapper = {
+  target: '_blank',
   alignItems: 'center',
   cursor: 'pointer',
   gap: '2',
@@ -37,6 +38,12 @@ const ContactItemWrapper = {
     transform: 'scale(1.04)',
   },
   transition: 'all 0.2s ease-in-out',
+};
+
+const ContactItemTextProps = {
+  fontFamily: 'heading',
+  fontWeight: '600',
+  fontSize: 'lg',
 };
 
 export default function Contact() {
@@ -61,44 +68,29 @@ export default function Contact() {
             </Heading>
             <Divider />
             <VStack align="left" gap="4">
-              <Flex {...ContactItemWrapper}>
+              <Flex
+                as={Link}
+                href="https://github.com/ash-bergs"
+                {...ContactItemWrapper}
+              >
                 <Icon as={FaGithub} boxSize="36px" />
-
-                <Link
-                  href="https://github.com/ash-bergs"
-                  target="_blank"
-                  fontFamily="heading"
-                  fontWeight="600"
-                  fontSize="lg"
-                >
-                  Github
-                </Link>
+                <Text {...ContactItemTextProps}>Github</Text>
               </Flex>
-              <Flex {...ContactItemWrapper}>
+              <Flex
+                as={Link}
+                href="https://www.linkedin.com/in/ashleybergsma89/"
+                {...ContactItemWrapper}
+              >
                 <Icon as={FaLinkedin} boxSize="36px" />
-
-                <Link
-                  href="https://www.linkedin.com/in/ashleybergsma89/"
-                  target="_blank"
-                  fontFamily="heading"
-                  fontWeight="600"
-                  fontSize="lg"
-                >
-                  LinkedIn
-                </Link>
+                <Text {...ContactItemTextProps}>LinkedIn</Text>
               </Flex>
-              <Flex {...ContactItemWrapper}>
+              <Flex
+                as={Link}
+                href="mailto:bergsma.ash@gmail.com"
+                {...ContactItemWrapper}
+              >
                 <Icon as={SiGmail} boxSize="36px" />
-
-                <Link
-                  href="mailto:bergsma.ash@gmail.com"
-                  target="_blank"
-                  fontFamily="heading"
-                  fontWeight="600"
-                  fontSize="lg"
-                >
-                  bergsma.ash@gmail.com
-                </Link>
+                <Text {...ContactItemTextProps}>bergsma.ash@gmail.com</Text>
               </Flex>
             </VStack>
           </VStack>
@@ -108,44 +100,29 @@ export default function Contact() {
             </Heading>
             <Divider />
             <VStack align="left" gap="4">
-              <Flex {...ContactItemWrapper}>
+              <Flex
+                as={Link}
+                href="https://github.com/ash-bergs"
+                {...ContactItemWrapper}
+              >
                 <Icon as={FaSteam} boxSize="36px" />
-
-                <Link
-                  href="https://github.com/ash-bergs"
-                  target="_blank"
-                  fontFamily="heading"
-                  fontWeight="600"
-                  fontSize="lg"
-                >
-                  Steam
-                </Link>
+                <Text {...ContactItemTextProps}>Steam</Text>
               </Flex>
-              <Flex {...ContactItemWrapper}>
+              <Flex
+                as={Link}
+                href="https://www.instagram.com/ramenmermaid/"
+                {...ContactItemWrapper}
+              >
                 <Icon as={FaInstagram} boxSize="36px" />
-
-                <Link
-                  href="https://www.instagram.com/ramenmermaid/"
-                  target="_blank"
-                  fontFamily="heading"
-                  fontWeight="600"
-                  fontSize="lg"
-                >
-                  RamenMermaid
-                </Link>
+                <Text {...ContactItemTextProps}>RamenMermaid</Text>
               </Flex>
-              <Flex {...ContactItemWrapper}>
+              <Flex
+                as={Link}
+                href="https://dev.to/ash_bergs"
+                {...ContactItemWrapper}
+              >
                 <Icon as={FaPaperclip} boxSize="36px" />
-
-                <Link
-                  href="https://dev.to/ash_bergs"
-                  target="_blank"
-                  fontFamily="heading"
-                  fontWeight="600"
-                  fontSize="lg"
-                >
-                  Blog
-                </Link>
+                <Text {...ContactItemTextProps}>Blog</Text>
               </Flex>
             </VStack>
           </VStack>
