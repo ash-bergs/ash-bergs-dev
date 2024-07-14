@@ -19,7 +19,7 @@ import { SiGmail } from 'react-icons/si';
 // there's no need to engineer a whole reusable section here right now
 // but I'll define all the styles separately
 const ContactCardWrapper = {
-  w: 'full',
+  w: '340px',
   gap: '6',
   border: '1px solid',
   borderColor: 'gray.200',
@@ -53,7 +53,9 @@ export default function Contact() {
         {/**TODO: make this into a component that takes data like a cms*/}
         <Box px={{ base: 16, md: 48 }} py="12">
           <VStack spacing="6">
-            <Heading fontSize="6xl">Let{`\u0027`}s get in touch!</Heading>
+            <Heading textAlign="center" fontSize={{ base: '4xl', md: '6xl' }}>
+              Let{`\u0027`}s get in touch!
+            </Heading>
             <Text>
               Whether you{`\u0027`}re looking to collaborate, contact me for
               hire, or want to inquire about a piece of art - you can get ahold
@@ -61,7 +63,12 @@ export default function Contact() {
             </Text>
           </VStack>
         </Box>
-        <Flex direction={{ base: 'column', md: 'row' }} px="40" gap="6">
+        <Flex
+          alignItems="center"
+          justify="center"
+          direction={{ base: 'column', md: 'row' }}
+          gap="6"
+        >
           <VStack {...ContactCardWrapper}>
             <Heading alignSelf="center" fontSize="2xl">
               Professional
