@@ -70,6 +70,13 @@ export const artProjects: Project[] = [
     image: '/images/octopus.jpg',
     url: 'https://www.playbook.com/s/ash-bergs/dervn1CaZLvVVzpLoqWRoWJS',
   },
+  {
+    id: 3,
+    title: 'Pizza Rat',
+    description: 'Digital Painting - Procreate',
+    image: '/images/pizza-rat.png',
+    url: 'https://www.playbook.com/s/ash-bergs/vNq3KMSDd6Mo1E7nz1DWpYUT',
+  },
   // {
   //   id: 3,
   //   title: 'Ash Bergsma Blog',
