@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Providers } from './providers';
 import HeaderNav from '@/components/HeaderNav';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: 'Ash Bergs',
@@ -19,6 +20,7 @@ export default function RootLayout({
           <HeaderNav />
           {children}
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
