@@ -14,9 +14,11 @@ import { Link } from '@chakra-ui/next-js';
 import { IoClose } from 'react-icons/io5';
 import { IoMenu } from 'react-icons/io5';
 import ToggleTheme from './ToggleTheme';
+import { useColorMode } from '@chakra-ui/react';
 
 export default function HeaderNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const { colorMode } = useColorMode();
 
   const handleToggleMenu = () => setIsOpen(!isOpen);
   return (
@@ -26,10 +28,8 @@ export default function HeaderNav() {
       justify="space-between"
       wrap="wrap"
       padding="1.5rem"
-      bg="white"
-      color="black"
-      borderBottom="2px solid"
-      borderBottomColor="gray.200"
+      bg={colorMode === 'dark' ? 'gray.800' : 'white'}
+      boxShadow="0px 5px 5px rgba(0, 0, 0, 0.05)"
     >
       <Flex align="center" mr={5}>
         <Link href="/" _hover={{ textDecoration: 'none' }}>
