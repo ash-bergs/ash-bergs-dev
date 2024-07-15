@@ -1,5 +1,5 @@
 'use client';
-import { Box, Flex, Text, Image } from '@chakra-ui/react';
+import { Flex, Text, Image } from '@chakra-ui/react';
 
 type PageHeaderProps = {
   copy: string;
@@ -19,10 +19,6 @@ export default function PageHeader({ copy, image }: PageHeaderProps) {
     >
       <Text textAlign="center">{copy}</Text>
       <Image width={{ base: '150px', md: '200px' }} src={image} alt="" />
-      {/* <Image
-        width={{ base: '250px', md: '500px' }}
-        src="/images/portfolio-hero-sketch.png"
-      /> */}
     </Flex>
   );
 }
