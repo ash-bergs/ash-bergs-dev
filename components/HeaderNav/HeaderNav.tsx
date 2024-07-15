@@ -13,6 +13,7 @@ import {
 import { Link } from '@chakra-ui/next-js';
 import { IoClose } from 'react-icons/io5';
 import { IoMenu } from 'react-icons/io5';
+import ToggleTheme from './ToggleTheme';
 
 export default function HeaderNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,6 +79,7 @@ export default function HeaderNav() {
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
       </Flex>
+      <ToggleTheme />
     </Flex>
   );
 }
