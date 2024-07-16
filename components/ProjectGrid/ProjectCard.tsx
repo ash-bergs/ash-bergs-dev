@@ -28,7 +28,7 @@ const ProjectCard = (project: Project) => {
         p="2"
         _hover={{
           transform: 'rotate(0) scale(1.04)',
-          color: colorMode === 'light' && '#0d2c3f',
+          color: '#0d2c3f',
           transition: 'all 0.5s ease-in-out',
           //color: 'purple',
           // I think this needs to just be applied to the tag container

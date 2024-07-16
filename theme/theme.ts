@@ -1,6 +1,7 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react';
 import { GlobalStyleProps } from '@chakra-ui/theme-tools';
 import '@fontsource/fira-sans';
+import '@fontsource-variable/heebo';
 
 const config: ThemeConfig = {
   initialColorMode: 'system',
@@ -11,7 +12,7 @@ const theme = extendTheme({
   config,
   fonts: {
     heading: `'Fira Sans', sans-serif`,
-    body: `'Roboto Condensed', sans-serif`,
+    body: `'Heebo Variable', sans-serif`,
   },
 
   styles: {

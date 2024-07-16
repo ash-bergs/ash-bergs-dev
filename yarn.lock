@@ -1075,6 +1075,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.0.tgz#a5417ae8427873f1dd08b70b3574b453e67b5f7f"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
+"@fontsource-variable/heebo@^5.0.22":
+  version "5.0.22"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/heebo/-/heebo-5.0.22.tgz#b178dcd8015f9153e5837abf6260af4d1426d660"
+  integrity sha512-UXPSY7KLMuWMh4HadkLyhNlTzWNp2ksV6C6tVQeFb+CNuFr8+PSmIYQRvgDUCMh4KmKZ8cztJSwZ7iTEaJRq4Q==
+
 "@fontsource-variable/roboto-condensed@^5.0.3":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@fontsource-variable/roboto-condensed/-/roboto-condensed-5.0.3.tgz#8dd8a39fb938a5d73371a968ae712bc765e719b6"
