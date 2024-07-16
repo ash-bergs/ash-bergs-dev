@@ -27,7 +27,7 @@ export default function HeaderNav() {
       gap="4"
       padding="1.5rem"
       justifyContent={{ base: 'space-between', md: 'initial' }}
-      bg={colorMode === 'dark' ? 'gray.800' : 'white'}
+      bg={colorMode === 'dark' ? '#1c455d' : '#edfbfe'}
       boxShadow="0px 5px 5px rgba(0, 0, 0, 0.05)"
     >
       <Flex minWidth="110px">

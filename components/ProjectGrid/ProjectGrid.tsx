@@ -1,8 +1,8 @@
 'use client';
-import { Box, Flex, Text, Image, chakra } from '@chakra-ui/react';
-import { Link } from '@chakra-ui/next-js';
+import { chakra } from '@chakra-ui/react';
 import { Project } from '@/data/projects';
 import { motion } from 'framer-motion';
+import ProjectCard from './ProjectCard';
 
 const MotionGrid = chakra(motion.div);
 
@@ -16,8 +16,6 @@ export default function ProjectGrid({ projects }: ProjectGridProps) {
       display="flex"
       py="12"
       px="16"
-      // borderBottom="2px solid"
-      // borderBottomColor="gray.200"
       flexWrap="wrap"
       justifyContent="center"
       gap="6"
@@ -29,39 +27,7 @@ export default function ProjectGrid({ projects }: ProjectGridProps) {
       }}
     >
       {projects.map((project) => (
-        <Link
-          key={project.id}
-          href={project.url}
-          style={{
-            textDecoration: 'none',
-          }}
-          isExternal
-        >
-          <Box
-            key={project.id}
-            maxW="sm"
-            //height="520px"
-            borderWidth="1px"
-            borderRadius="lg"
-            overflow="hidden"
-            _hover={{
-              transform: 'scale(1.04)',
-            }}
-            transition={'transform 0.2s ease-in-out'}
-          >
-            <Image src={project.image} alt={project.title} />
-            <Box p="6">
-              <Box display="flex" alignItems="baseline">
-                <Text fontSize="2xl" fontWeight="semibold" lineHeight="tight">
-                  {project.title}
-                </Text>
-              </Box>
-              <Text mt="2" color="gray.600">
-                {project.description}
-              </Text>
-            </Box>
-          </Box>
-        </Link>
+        <ProjectCard key={project.id} {...project} />
       ))}
     </MotionGrid>
   );
