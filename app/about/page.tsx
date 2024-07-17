@@ -12,47 +12,35 @@ export default function About() {
         <Box px={{ base: 20, md: 40, lg: 80 }} py="12">
           <VStack spacing="6">
             <Text>
-              Hi! I’m Ash, and I’m a developer and illustrator based in Grand
-              Rapids, Michigan. I love working on the web, creating accessible
-              and appealing visual experiences, and solving complex problems. I
-              have experience working in small and large startups in
-              telecommunications and agri-tech.
+              Hello, I’m Ash! I’m a developer and illustrator based in Grand
+              Rapids, Michigan. I enjoy working on the web to create accessible
+              and thoughtfully designed experiences, but I’m also motivated to
+              create solutions for complex problems with all of the skills in my
+              toolbox.
+            </Text>
+
+            <Text>
+              I have experience working in small and mid-sized startups in both
+              telecommunications and agri-tech. In these roles I worked often
+              with JavaScript and React, but also played a significant role in
+              building and maintaining backend databases using postgres, sql,
+              and postgis.
+            </Text>
+
+            <Text>
+              Beyond tech I’ve had a wealth of experience in the service
+              industry, where I worked as head cook in several kitchens. While
+              that may not seem immediately transferable - the skills I built
+              while creating dishes, ordering inventory, and managing a small
+              team to pull it all off have continued to serve me when deadlines
+              are tight and team morale is low. It also imparted a strong team
+              player mentality that I consider a big part of who I am.
             </Text>
             <Text>
-              The items in my frontend toolbox are especially honed, having
-              spent more than 3 years working professionally with JavaScript and
-              TypeScript, React, and popular frameworks like Next. I’ve built
-              and maintained various frontend marketing and API documentation
-              websites, where I got exposure to SEO, Open API specs, and
-              accessibility best practices.
-            </Text>
-            <Text>
-              I’ve also spent 2 years working in the backend using JavaScript
-              ORMs, and developing knowledge using relational databases and SQL.
-              I love the structure that can be found in this area of
-              development, and welcome the opportunity to continue learning.
-            </Text>
-            {/* <Text>
-              I came to development unconventionally in 2020. Before I had been
-              working in kitchens where I designed menus, and managed small
-              teams to prepare and execute them on a large scale. When the
-              ensuing pandemic hit the restaurant industry I was forced to make
-              some decisions, so I signed up for an exhaustive 10 month full
-              stack web development bootcamp.
-            </Text> */}
-            {/* <Text>
-              As a child of the 90’s I had a natural interest in the web, so
-              this move was one I had actually already been contemplating.
-              During that time I was exposed to Python, JavaScript, React, Redux
-              and Node, and spent time building real projects on small teams
-              with all of them.
-            </Text> */}
-            <Text>
-              On top of being a well-equipped developer, I’m a lifelong artist.
-              I focus on watercolor and guoache in physical mediums, and Adobe
-              Illustrator in digital medium. You can view some of my work on
-              this site, including a series of custom mascot icons I created in
-              my last role.
+              I’m also a lifelong artist, doing my best to find the beauty in
+              the small things. I focus on watercolor and guoache in physical
+              mediums, and Adobe Illustrator in digital medium. You can view
+              some of my work on this site.
             </Text>
           </VStack>
         </Box>
