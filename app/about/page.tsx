@@ -28,17 +28,18 @@ export default function About() {
             </Text>
 
             <Text>
-              Beyond tech I’ve had a wealth of experience in the service
-              industry, where I worked as head cook in several kitchens. While
-              that may not seem immediately transferable - the skills I built
-              while creating dishes, ordering inventory, and managing a small
-              team to pull it all off have continued to serve me when deadlines
-              are tight and team morale is low. It also imparted a strong team
-              player mentality that I consider a big part of who I am.
+              Beyond tech I’ve had a wealth of experience first in health care
+              and secondly the service industry, where I worked as head cook in
+              several kitchens. While that may not seem immediately transferable
+              - the skills I built while creating dishes, ordering inventory,
+              and managing a small team to pull it all off have continued to
+              serve me when deadlines are tight and team morale is low. It also
+              imparted a strong team player mentality that I consider a big part
+              of who I am.
             </Text>
             <Text>
               I’m also a lifelong artist, doing my best to find the beauty in
-              the small things. I focus on watercolor and guoache in physical
+              the small things. I focus on watercolor and gouache in physical
               mediums, and Adobe Illustrator in digital medium. You can view
               some of my work on this site.
             </Text>
