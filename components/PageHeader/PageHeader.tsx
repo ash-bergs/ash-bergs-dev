@@ -1,5 +1,5 @@
 'use client';
-import { Flex, Text, Image } from '@chakra-ui/react';
+import { Flex, Text, Image, Divider, useColorMode } from '@chakra-ui/react';
 
 type PageHeaderProps = {
   copy: string;
@@ -7,18 +7,27 @@ type PageHeaderProps = {
 };
 
 export default function PageHeader({ copy, image }: PageHeaderProps) {
+  const { colorMode } = useColorMode();
+
+  const dividerColor =
+    colorMode === 'light' ? 'gray.300' : 'rgba(255, 255 , 255, 0.4)';
+
   return (
-    <Flex
-      py="12"
-      px={{ base: 20, md: 60, xl: 80 }}
-      borderBottom="2px solid"
-      borderBottomColor="gray.200"
-      direction="column"
-      align="center"
-      gap="6" //half the amount of y padding - should the standard be increments of 6?
-    >
-      <Text textAlign="center">{copy}</Text>
-      <Image width={{ base: '150px', md: '200px' }} src={image} alt="" />
+    <Flex direction="column" align="center" px="12">
+      <Divider borderColor={dividerColor} />
+      <Flex
+        py="12"
+        w="50%"
+        direction="column"
+        align="center"
+        gap="6" //half the amount of y padding - should the standard be increments of 6?
+      >
+        <Text textAlign="center" fontSize="lg">
+          {copy}
+        </Text>
+        <Image width={{ base: '150px', md: '200px' }} src={image} alt="" />
+      </Flex>
+      <Divider borderColor={dividerColor} />
     </Flex>
   );
 }

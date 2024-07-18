@@ -17,8 +17,8 @@ export default function PageHero() {
       py="16"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
-      borderBottom="2px solid"
-      borderBottomColor="gray.200"
+      // borderBottom="2px solid"
+      // borderBottomColor="gray.200"
     >
       <Heading
         textTransform="capitalize"
