@@ -17,7 +17,7 @@ export default function PageHeader({ copy, image }: PageHeaderProps) {
       <Divider borderColor={dividerColor} />
       <Flex
         py="12"
-        w="50%"
+        w={{ base: '100%', md: '50%', xl: '40%' }}
         direction="column"
         align="center"
         gap="6" //half the amount of y padding - should the standard be increments of 6?

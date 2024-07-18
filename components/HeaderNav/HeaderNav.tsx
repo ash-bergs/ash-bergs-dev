@@ -64,22 +64,15 @@ const DesktopNav = () => {
 };
 
 const MobileNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleToggleMenu = () => setIsOpen(!isOpen);
   return (
     <Flex gap="4" display={{ base: 'flex', md: 'none' }}>
       <ToggleTheme />
-      <Menu isOpen={isOpen}>
-        <MenuButton
-          as="div"
-          display={{ base: 'block', md: 'none' }}
-          onClick={handleToggleMenu}
-        >
+      <Menu>
+        <MenuButton as="div" display={{ base: 'block', md: 'none' }}>
           <IconButton
-            icon={isOpen ? <IoClose /> : <IoMenu />}
+            icon={<IoMenu />}
             variant="outline"
-            aria-label={`Toggle Menu ${isOpen ? 'close' : 'open'}`}
+            aria-label={`Toggle Menu`}
           />
         </MenuButton>
         <MenuList fontSize="xl" fontFamily="heading">
