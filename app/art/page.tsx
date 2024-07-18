@@ -10,9 +10,9 @@ export default function Art() {
       <PageHero />
       <section>
         <PageHeader
-          copy="I'm an unconventionally taught, lifelong artist. I've created
-            digital assets for apps and websites, and I also sell physical
-            painting and illustrations. I mostly create silly pictures of
+          copy="I'm self-taught taught, lifelong artist. I've created
+            digital assets for apps and websites, and I also create physical
+            painting and illustrations. My favorite subject matter is
             animals, food, and insects."
         />
         <ProjectGrid projects={artProjects} />
