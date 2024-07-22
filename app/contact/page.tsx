@@ -8,7 +8,9 @@ import {
   Text,
   VStack,
   Divider,
+  chakra,
 } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
@@ -46,6 +48,8 @@ const ContactItemTextProps = {
   fontSize: 'lg',
 };
 
+const MotionFlex = chakra(motion.div);
+
 export default function Contact() {
   return (
     <main>
@@ -63,11 +67,18 @@ export default function Contact() {
             </Text>
           </VStack>
         </Box>
-        <Flex
+        <MotionFlex
+          display="flex"
           alignItems="center"
-          justify="center"
-          direction={{ base: 'column', md: 'row' }}
+          justifyContent="center"
+          flexDirection={{ base: 'column', md: 'row' }}
           gap="6"
+          cursor="pointer"
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            type: 'spring',
+          }}
         >
           <VStack {...ContactCardWrapper}>
             <Heading alignSelf="center" fontSize="2xl">
@@ -133,7 +144,7 @@ export default function Contact() {
               </Flex>
             </VStack>
           </VStack>
-        </Flex>
+        </MotionFlex>
       </section>
     </main>
   );

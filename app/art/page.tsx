@@ -14,6 +14,7 @@ export default function Art() {
             digital assets for apps and websites, and I also create physical
             painting and illustrations. My favorite subject matter is
             animals, food, and insects."
+          image="/images/art-hero-image.png"
         />
         <ProjectGrid projects={artProjects} />
       </section>
