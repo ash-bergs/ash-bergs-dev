@@ -16,7 +16,7 @@ export const workProjects: Project[] = [
     description:
       'View earthquake events around the globe. This project utilizes Next, Tailwind, Mapbox and  data from the USGS.',
     image: '/images/earthquake-tracker-screenshot.png',
-    url: 'https://github.com/ash-bergs/earthquake-tracker',
+    url: 'https://earthquake-tracker-dun.vercel.app/',
   },
   {
     id: 2,
