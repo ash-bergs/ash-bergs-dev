@@ -20,6 +20,14 @@ export const workProjects: Project[] = [
   },
   {
     id: 2,
+    title: 'Pantry Pal',
+    description:
+      'Shopping simplified. An exercise in pure JS, CSS, and HTML. Offline, accessible, and backed up.',
+    image: '/images/pantry-pal-screenshot.png',
+    url: 'https://ash-bergs.github.io/pantry-pal/',
+  },
+  {
+    id: 3,
     title: 'Portfolio',
     description:
       'This is my art portfolio site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
