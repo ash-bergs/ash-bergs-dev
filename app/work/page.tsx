@@ -10,9 +10,7 @@ export default function Work() {
       <PageHero />
       <section>
         <PageHeader
-          copy="A collection of hobby projects I've worked on. These are
-            small learning and experimental projects, but they demonstrate my interests and
-            skills."
+          copy="This section features a selection of my hobby projects, which, though small and experimental, showcase my interests and abilities."
           image="/images/work-hero-sketch-portfolio.png"
         />
         <ProjectGrid projects={workProjects} />
