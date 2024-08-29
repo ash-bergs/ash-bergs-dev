@@ -23,8 +23,9 @@ export default function PageHero() {
       <Heading
         textTransform="capitalize"
         fontFamily="heading"
-        fontSize={{ base: '4xl', md: '6xl' }}
+        fontSize={{ base: '5xl', md: '6xl' }}
         textShadow="lg"
+        letterSpacing={3}
       >
         {pageHeroTitle}
       </Heading>

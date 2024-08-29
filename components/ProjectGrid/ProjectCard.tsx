@@ -20,7 +20,7 @@ const ProjectCard = (project: Project) => {
         borderRadius="lg"
         boxShadow="sm"
         transition="all 0.5s"
-        bgImage={`linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.15)), url(${project.image})`}
+        bgImage={`linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.25)), url(${project.image})`}
         bgSize="cover"
         bgPosition="center"
         color="white"

@@ -10,7 +10,7 @@ export default function Work() {
       <PageHero />
       <section>
         <PageHeader
-          copy="This section features a selection of my hobby projects, which, though small and experimental, showcase my interests and abilities."
+          copy="Each project here highlights a different interest or skill. Explore geological events with Earthquake Tracker, or try out a shopping list app that explores service workers and embraces traditional hmtl and js (with typescript of course)."
           image="/images/work-hero-sketch-portfolio.png"
         />
         <ProjectGrid projects={workProjects} />

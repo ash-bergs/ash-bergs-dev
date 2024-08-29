@@ -14,7 +14,7 @@ export const workProjects: Project[] = [
     id: 1,
     title: 'Earthquake Tracker',
     description:
-      'View earthquake events around the globe. This project utilizes Next, Tailwind, Mapbox and  data from the USGS.',
+      'View earthquake events around the globe. Utilizes Next, Tailwind, Mapbox and data from the USGS.',
     image: '/images/earthquake-tracker-screenshot.png',
     url: 'https://earthquake-tracker-dun.vercel.app/',
   },
@@ -22,7 +22,7 @@ export const workProjects: Project[] = [
     id: 2,
     title: 'Pantry Pal',
     description:
-      'Shopping simplified. An exercise in pure JS, CSS, and HTML. Offline, accessible, and backed up.',
+      'An exercise in pure JS, CSS, and HTML, including web workers, indexdb and other native browser APIs. Offline, accessible, and backed up.',
     image: '/images/pantry-pal-screenshot.png',
     url: 'https://ash-bergs.github.io/pantry-pal/',
   },
@@ -30,7 +30,7 @@ export const workProjects: Project[] = [
     id: 3,
     title: 'Portfolio',
     description:
-      'This is my art portfolio site. It is a Next.js app that uses Chakra UI for styling. It is a work in progress.',
+      'The portfolio website you are currently visiting. Built with Next.js, Chakra UI, and featuring hand drawn images by me. A work in progress.',
     image: '/images/portfolio-screenshot.png',
     url: 'https://github.com/ash-bergs/ash-bergs-dev',
   },

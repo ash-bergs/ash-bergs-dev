@@ -10,39 +10,34 @@ export default function About() {
       <section>
         {/**TODO: make this into a component that takes data like a cms - copy */}
         <Flex justify="center">
-          <Box w={{ base: '70%', md: '50%', xl: '40%' }} py="12">
+          <Box w={{ base: '70%', md: '50%', xl: '40%' }} py="12" fontSize="xl">
             <VStack spacing="6">
               <Text>
-                Hello, I’m Ash! I’m a developer and illustrator based in Grand
-                Rapids, Michigan. I enjoy working on the web to create
-                accessible and thoughtfully designed experiences, but I’m also
-                motivated to create solutions for complex problems with all of
-                the skills in my toolbox.
+                Hello, I’m Ash! I’m a developer and artist based in Michigan who
+                enjoys working on the web, and solving unique and people-centric
+                problems creatively.
               </Text>
 
               <Text>
-                I have experience working in small and mid-sized startups in
-                both telecommunications and agri-tech. In these roles I worked
-                often with JavaScript and React, but also played a significant
-                role in building and maintaining backend databases using
-                postgres, sql, and postgis.
+                My experience ranges from mid-to-small sized startups, working
+                often with React, Next.js, and standard design and css-in-js
+                libraries like Chakra UI and styled-components. I’m familiar
+                with services like Contentful for content management, as well as
+                a building and managing in-house CMS solutions.
               </Text>
 
               <Text>
-                Beyond tech I’ve had a wealth of experience first in health care
-                and secondly the service industry, where I ran several kitchens.
-                While that may not seem immediately transferable - the skills I
-                built while creating dishes, ordering inventory, and managing a
-                small team to pull it all off have continued to serve me when
-                deadlines are tight and team morale is low. It also imparted a
-                strong team player mentality that I consider a big part of who I
-                am.
+                In a previous role I was able to work frequently with tools like
+                Mapbox, and further honed my backend skills managing databases
+                built with postgres and utlizing SQL and PostGIS functionality.
               </Text>
               <Text>
-                I’m also a lifelong artist, doing my best to find the beauty in
-                the small things. I focus on watercolor and gouache in physical
-                mediums, and Adobe Illustrator in digital medium. You can view
-                some of my work on this site.
+                Beyond tech I’ve worn a hat or two in the healthcare and service
+                industry, my favorite being my time spent managing the line of a
+                kitchen. I enjoyed working on a small team that valued
+                communication, and more or less handled problems in the open.
+                The skills I built managing inventory, menus, and team members
+                has served me in every role that has followed.
               </Text>
             </VStack>
           </Box>

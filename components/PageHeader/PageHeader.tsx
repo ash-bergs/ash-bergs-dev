@@ -20,12 +20,11 @@ export default function PageHeader({ copy, image }: PageHeaderProps) {
         w={{ base: '100%', md: '50%', xl: '40%' }}
         direction="column"
         align="center"
-        gap="6" //half the amount of y padding - should the standard be increments of 6?
       >
-        <Text textAlign="center" fontSize="lg">
+        <Text textAlign="center" fontSize="xl">
           {copy}
         </Text>
-        <Image width={{ base: '150px', md: '200px' }} src={image} alt="" />
+        <Image width={{ base: '300px', md: '300px' }} src={image} alt="" />
       </Flex>
       <Divider borderColor={dividerColor} />
     </Flex>
