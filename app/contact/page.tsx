@@ -120,7 +120,7 @@ export default function Contact() {
             <VStack align="left" gap="4">
               <Flex
                 as={Link}
-                href="https://github.com/ash-bergs"
+                href="https://steamcommunity.com/profiles/76561199111389366/"
                 {...ContactItemWrapper}
               >
                 <Icon as={FaSteam} boxSize="36px" />
