@@ -13,31 +13,40 @@ export default function About() {
           <Box w={{ base: '70%', md: '50%', xl: '40%' }} py="12" fontSize="xl">
             <VStack spacing="6">
               <Text>
-                Hello, I’m Ash! I’m a developer and artist based in Michigan who
-                enjoys working on the web, and solving unique and people-centric
-                problems creatively.
+                Hello, I’m Ash! I’m a{' '}
+                <span style={{ fontWeight: 'bold' }}>
+                  developer and artist based in Michigan
+                </span>{' '}
+                who enjoys working on the web, and solving unique and
+                people-centric problems.
               </Text>
 
               <Text>
                 My experience ranges from mid-to-small sized startups, working
-                often with React, Next.js, and standard design and css-in-js
-                libraries like Chakra UI and styled-components. I’m familiar
-                with services like Contentful for content management, as well as
-                a building and managing in-house CMS solutions.
+                often with{' '}
+                <span style={{ fontWeight: 'bold' }}>
+                  React, Next.js, and standard design libraries like Chakra UI
+                  and styled-components
+                </span>
+                . I also have several years of experience with{' '}
+                <span style={{ fontWeight: 'bold' }}>Mapbox</span> and building
+                rich geo-spatial experiences.
               </Text>
 
               <Text>
-                In a previous role I was able to work frequently with tools like
-                Mapbox, and further honed my backend skills managing databases
-                built with postgres and utlizing SQL and PostGIS functionality.
+                My backend experience includes working with Postgresql, PostGIS,
+                and SQL to build and manage databases, while using Fastify and
+                Prisma ORM to build robust APIs for frontend applications. I
+                also have experience using CMS platforms like Contentful, as
+                well as a building and managing in-house CMS solutions.
               </Text>
               <Text>
-                Beyond tech I’ve worn a hat or two in the healthcare and service
-                industry, my favorite being my time spent managing the line of a
-                kitchen. I enjoyed working on a small team that valued
-                communication, and more or less handled problems in the open.
-                The skills I built managing inventory, menus, and team members
-                has served me in every role that has followed.
+                I enjoy working on a small teams that value communication, and
+                work in the open. I have introduced Notion and helped past teams
+                apply it to project management, knowledge sharing, and
+                asynchronous communication. This passion extends to my habit of
+                maintained documentation and encouraging testing within
+                projects.
               </Text>
             </VStack>
           </Box>
