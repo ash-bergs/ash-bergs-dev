@@ -10,7 +10,7 @@ export default function Art() {
       <PageHero />
       <section>
         <PageHeader
-          copy="I embrace digital and traditional art using tools like Figma, Adobe Illustrator, watercolor, gouache, and more. My favorite subject is dogs, especially the seniors, but I’ve been known to design a logo, mascot, or webpage."
+          copy="I embrace digital and traditional art using tools like Figma, Adobe Illustrator, watercolor, and gouache. I specialize in animal and pet portraits, and creating enchanting digital characters."
           image="/images/art-hero-image.png"
         />
         <ProjectGrid projects={artProjects} />
